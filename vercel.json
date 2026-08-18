@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    {
+      "source": "/subscribe1.php",
+      "destination": "/api/subscribe1"
+    },
+    {
+      "source": "/mail-subscribe.php",
+      "destination": "/api/mail-subscribe"
+    },
+    {
+      "source": "/resubmit.php",
+      "destination": "/api/resubmit"
+    },
+    {
+      "source": "/submit-version.php",
+      "destination": "/api/submit-version"
+    }
+  ]
+}
