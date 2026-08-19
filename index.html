@@ -356,29 +356,29 @@
             </ul>
         </div>
     </div>
-    <div class="sec sec-faq sa-faq">
-        <div class="wrapper">
+    <div class="sa-faq">
+        <div class="sa-faq__inner">
             <div class="sa-faq__title">Preguntas frecuentes</div>
-            <div class="sa-faq__item">
-                <div class="sa-faq__q">¿Cómo funciona el pago contra entrega?</div>
+            <details class="sa-faq__item" open>
+                <summary class="sa-faq__q">¿Cómo funciona el pago contra entrega?<span class="sa-faq__icon"></span></summary>
                 <div class="sa-faq__a">Recibes el paquete en tu domicilio y pagas directamente al repartidor en el momento de la entrega. No necesitas pagar nada por adelantado.</div>
-            </div>
-            <div class="sa-faq__item">
-                <div class="sa-faq__q">¿Es seguro comprar en esta página?</div>
+            </details>
+            <details class="sa-faq__item">
+                <summary class="sa-faq__q">¿Es seguro comprar en esta página?<span class="sa-faq__icon"></span></summary>
                 <div class="sa-faq__a">Sí. Revisas el producto antes de pagar y solo entregas el dinero si estás conforme con lo recibido.</div>
-            </div>
-            <div class="sa-faq__item">
-                <div class="sa-faq__q">¿Cuánto tarda el envío a mi domicilio en Chile?</div>
+            </details>
+            <details class="sa-faq__item">
+                <summary class="sa-faq__q">¿Cuánto tarda el envío a mi domicilio en Chile?<span class="sa-faq__icon"></span></summary>
                 <div class="sa-faq__a">El tiempo de entrega varía según la región, pero trabajamos con envío a todo el país.</div>
-            </div>
-            <div class="sa-faq__item">
-                <div class="sa-faq__q">¿Qué necesito para hacer mi pedido?</div>
+            </details>
+            <details class="sa-faq__item">
+                <summary class="sa-faq__q">¿Qué necesito para hacer mi pedido?<span class="sa-faq__icon"></span></summary>
                 <div class="sa-faq__a">Solo completa el formulario con tu nombre y teléfono. Un operador se comunicará contigo para confirmar los datos de envío.</div>
-            </div>
-            <div class="sa-faq__item">
-                <div class="sa-faq__q">¿Puedo rechazar el paquete si cambio de opinión?</div>
+            </details>
+            <details class="sa-faq__item">
+                <summary class="sa-faq__q">¿Puedo rechazar el paquete si cambio de opinión?<span class="sa-faq__icon"></span></summary>
                 <div class="sa-faq__a">Sí, si no deseas continuar con la compra puedes rechazar la entrega sin compromiso.</div>
-            </div>
+            </details>
         </div>
     </div>
     <footer class="footer">
@@ -455,11 +455,21 @@
 .sa-eeat-footer p{margin:0 0 10px!important;color:#cfcfcf!important;font-size:13px!important}
 .sa-eeat-footer .sa-eeat-links{margin-top:12px!important;padding-top:12px!important;border-top:1px solid #3a3a3a!important}
 .sa-eeat-footer .sa-eeat-links a{color:#f2a33c!important;text-decoration:underline!important;margin-right:16px!important;font-size:13px!important;display:inline-block!important}
-.sa-faq{padding:30px 16px!important}
-.sa-faq__title{font-size:22px!important;font-weight:700!important;text-align:center!important;margin-bottom:18px!important}
-.sa-faq__item{max-width:800px;margin:0 auto 14px auto;border-bottom:1px solid #e2e2e2;padding-bottom:12px}
-.sa-faq__q{font-weight:700;margin-bottom:6px}
-.sa-faq__a{color:#444}
+.sa-faq, .sa-faq *{box-sizing:border-box!important;font-family:Arial,Helvetica,sans-serif!important;text-align:left!important;float:none!important;position:static!important;background-image:none!important;text-transform:none!important;letter-spacing:normal!important}
+.sa-faq{background:#fafafa!important;padding:36px 16px!important;width:100%!important;margin:0!important}
+.sa-faq__inner{max-width:800px!important;margin:0 auto!important}
+.sa-faq__title{font-size:22px!important;font-weight:700!important;text-align:center!important;margin:0 0 20px!important;color:#2c2c2c!important}
+.sa-faq__item{display:block!important;background:#fff!important;border:1px solid #e2e2e2!important;border-radius:8px!important;margin:0 0 10px!important;padding:0!important;color:#2c2c2c!important}
+.sa-faq__item[open]{border-color:#e07a1f!important}
+.sa-faq__q{display:flex!important;align-items:center!important;justify-content:space-between!important;list-style:none!important;cursor:pointer!important;padding:14px 16px!important;font-weight:700!important;font-size:15px!important;color:#2c2c2c!important;background:#fff!important;border:none!important;margin:0!important}
+.sa-faq__q::-webkit-details-marker{display:none!important}
+.sa-faq__q::marker{content:""!important}
+.sa-faq__icon{flex:0 0 auto!important;width:18px!important;height:18px!important;position:relative!important;display:inline-block!important}
+.sa-faq__icon::before,.sa-faq__icon::after{content:""!important;position:absolute!important;top:50%!important;left:50%!important;background:#e07a1f!important;transform:translate(-50%,-50%)!important}
+.sa-faq__icon::before{width:12px!important;height:2px!important}
+.sa-faq__icon::after{width:2px!important;height:12px!important}
+.sa-faq__item[open] .sa-faq__icon::after{display:none!important}
+.sa-faq__a{padding:0 16px 16px!important;font-size:14px!important;line-height:1.6!important;color:#555!important;background:#fff!important;margin:0!important}
 </style>
 <footer class="sa-eeat-footer">
     <div class="sa-eeat-inner">
